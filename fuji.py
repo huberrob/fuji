@@ -250,7 +250,6 @@ class fuji:
                 # get core metadata from json-ld:
                 ext_meta = ex.extract(self.landing_html.encode('utf8'), syntaxes=['json-ld'])
                 source=''
-                ext_meta['json-ld']=[]
                 if len(ext_meta['json-ld'])>0:
                     json_ld=ext_meta['json-ld'][0]
                     source='Embedded JSON-LD'
